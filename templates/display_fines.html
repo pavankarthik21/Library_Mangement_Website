@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Fines</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid #28a745;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #28a745; /* Green background for header */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fines Information</h2>
+    <table>
+        <tr>
+            <th>Loan ID</th>
+            <th>Fine Amount</th>
+        </tr>
+        {% for row in fines %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>${{ row[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

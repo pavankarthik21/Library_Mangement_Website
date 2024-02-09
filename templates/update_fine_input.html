@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Fine</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://localhost:5000/update_fine" method="POST">
+        <h2>Update Fine</h2>
+        <label for="card_id">Card ID:</label>
+        <input type="text" id="card_id" name="card_id" required>
+        <br>
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" required>
+        <br>
+        <label for="fine_amt">Fine Amount:</label>
+        <input type="text" id="fine_amt" name="fine_amt" required>
+        <br>
+        <button type="submit">Update Fine</button>
+    </form>
+    <a href= "C:/Users/VAMSI%20RAGHAV/Desktop/VSCODE/CS6360/templates/navigation_lib.html" >Go Back</a>
+</body>
+</html>

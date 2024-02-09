@@ -1,0 +1,3 @@
+USE DB1;
+
+SHOW TABLES;

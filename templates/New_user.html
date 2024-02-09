@@ -1,0 +1,73 @@
+<!-- NEW BORROWER FORM  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="http://localhost:5000/process_form" method="post">
+        <label for="ssn">SSN:</label>
+        <input type="text" id="ssn" name="ssn" required>
+
+        <label for="bname">ENTER FULL NAME :</label>
+        <input type="text" id="bname" name="bname" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone( FORMAT : (XXX) XXX-XXXX):</label>
+        <input type="text" id="phone" name="phone" required>
+        
+        <button type="submit">Submit</button>
+        <p></p>
+        <a href= "C:/Users/VAMSI%20RAGHAV/Desktop/VSCODE/CS6360/templates/navigation_lib.html" >Go Back</a>
+    </form>
+    
+</body>
+</html>

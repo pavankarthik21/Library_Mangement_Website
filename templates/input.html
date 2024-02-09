@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information</title>
+</head>
+<body>
+    <h1>Enter ISBN OR BOOK TITLE</h1>
+    <form method="post" action="http://localhost:5000/get_info">
+        <label for="isbn">ISBN:</label>
+        <!-- <input type="text" name="isbn" required> -->
+        <input type="text" name="isbn">
+        <p> (OR) </p>
+        <label for="title">Title:</label>
+        <input type="text" name="title">
+        <p></p>
+        <button type="submit">Get Information</button>
+        <p></p>
+        <a href= "C:/Users/VAMSI%20RAGHAV/Desktop/VSCODE/CS6360/templates/navigation_lib.html" >Go Back</a>
+    </form>
+</body>
+</html>
